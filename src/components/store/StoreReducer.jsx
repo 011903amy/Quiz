@@ -20,6 +20,12 @@ export const StoreReducer = (state, action) => {
         message: action.payload,
       };
 
+      case "Name":
+      return {
+        ...state,
+       name: action.payload,
+      };
+
 
     case "SUCCESS":
       return {
